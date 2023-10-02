@@ -15,7 +15,7 @@ namespace VariasStrings
             string a = "a" + 2;
             string c = "c" + x;
 
-            string si = $"{s} interpolado"
+            string si = $"{s} interpolado";
             string ri = $@"{s} + {c} = {t} verbatim {x}";
 
             string sf = String.Format("{0} e {1}", s, t);
