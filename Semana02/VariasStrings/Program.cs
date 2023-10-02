@@ -7,16 +7,16 @@ namespace VariasStrings
         static void Main(string[] args)
         {
             string astro = "Lua";
-            string n = @"this is \b";
-            string i = """Uma string entre aspas""";
-            string b = @"\u00A9 e \u2665";
-            string g = "\u00A9 e \u2665 sem UTF";
+            string n = "this is \t a";
+            string i = @"""Uma string entre aspas""";
+            string b = "\u00A9 e \u2665";
+            string g = @"\u00A9 e \u2665 sem UTF";
 
-            console.WriteLine(astro);
-            console.WriteLine(n);
-            console.WriteLine(i);
-            console.WriteLine(b);
-            console.WriteLine(g);
+            Console.WriteLine(astro);
+            Console.WriteLine(n);
+            Console.WriteLine(i);
+            Console.WriteLine(b);
+            Console.WriteLine(g);
         }
     }
 }
