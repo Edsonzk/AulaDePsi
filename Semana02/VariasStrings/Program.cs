@@ -22,6 +22,15 @@ namespace VariasStrings
 
             Console.WriteLine("Valor de {0} mais {1} é {2}", x, y, x+y);
 
+
+            Console.WriteLine("Valor de {0} ")
+
+            Console.WriteLine($"{dd:f2}");
+            Console.WriteLine($"{dd:p1}");
+            Console.WriteLine($"{ii:x}");
+            Console.WriteLine($"{ii:c}");
+            
+
             Console.WriteLine(astro);
             Console.WriteLine(n);
             Console.WriteLine(i);
