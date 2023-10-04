@@ -10,7 +10,7 @@ namespace IncDec
             c = a++ + b++;
 
             int d = 20, e = 10, f;
-            f = ++d + ++e;
+            f = --d + --e;
 
             Console.WriteLine(c);
             Console.WriteLine(f);
