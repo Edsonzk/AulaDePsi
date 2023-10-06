@@ -10,7 +10,7 @@ namespace Cilindro
 
             double altura;
             double raio, V, Sa; 
-            double pi = 3.1415926;
+        
           
 
             Console.WriteLine("introduza a altura e o raio do cilindro: ");
@@ -21,8 +21,8 @@ namespace Cilindro
             altura = double.Parse(sAltura);
             raio = double.Parse(sRaio);
 
-            V = (raio * raio) * altura;
-            Sa = 2 * pi * raio * (raio * altura);
+            V = Math.Pow(raio , raio) * altura;
+            Sa = 2 * Math.PI() * raio * (raio * altura);
 
             Console.WriteLine();
             Console.WriteLine($"cilindro com {altura} altura e {raio} raio tem:\n");
