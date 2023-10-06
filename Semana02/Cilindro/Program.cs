@@ -26,7 +26,7 @@ namespace Cilindro
 
             Console.WriteLine();
             Console.WriteLine($"cilindro com {altura} altura e {raio} raio tem:\n");
-            Console.WriteLine($"volume: {V}\n")
+            Console.WriteLine($"volume: {V}\n");
             Console.WriteLine($"Area de superficie {Sa}");
         }
     }
