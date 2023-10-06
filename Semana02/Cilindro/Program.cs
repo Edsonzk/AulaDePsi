@@ -21,7 +21,7 @@ namespace Cilindro
             altura = double.Parse(sAltura);
             raio = double.Parse(sRaio);
 
-            V = Math.Pow(raio , raio) * altura;
+            V = Math.PI * Math.Pow(raio , raio) * altura;
             Sa = 2 * Math.PI() * raio * (raio * altura);
 
             Console.WriteLine();
