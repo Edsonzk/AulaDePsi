@@ -8,22 +8,26 @@ namespace Cilindro
         {
             string sAltura, sRaio;
 
-            double a;
-            double r, V, Sa; 
+            double altura;
+            double raio, V, Sa; 
             double pi = 3.1415926;
-            V = (r * r) * a;
-            Sa = 2 * 3,14 * r * (r * a);
+          
 
-            Console.WriteLine("introduza a altura: ");
-            Console.WriteLine("introduza o raio do cilindro: ")
+            Console.WriteLine("introduza a altura e o raio do cilindro: ");
+
             sAltura = Console.ReadLine();
             sRaio = Console.ReadLine();
 
             altura = double.Parse(sAltura);
             raio = double.Parse(sRaio);
 
-            Console.WriteLine(V);
-            Console.WriteLine(Sa);
+            V = (raio * raio) * altura;
+            Sa = 2 * pi * raio * (raio * altura);
+
+            Console.WriteLine();
+            Console.WriteLine($"cilindro com {altura}" e {raio} tem:\n);
+            Console.WriteLine($"volume: {V}\n")
+            Console.WriteLine($"Area de superficie {Sa};");
         }
     }
 }
