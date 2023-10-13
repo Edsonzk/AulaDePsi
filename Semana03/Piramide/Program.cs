@@ -15,23 +15,26 @@ namespace Piramide
             b = Int32.Parse(n);
 
 
-
-            for (int i = 1; i <= b; i++)
+            if (b >= 2)
             {
-                for (int j = 1; j < b - i; j++)
+                for (int i = 1; i <= b; i++)
                 {
-                    Console.Write(" ");
+                    for (int j = 1; j < b - i; j++)
+                    {
+                        Console.Write(" ");
+                    }
+
+
+                    for (int k = 1; k <= 2 * i - 1; k++)
+                    {
+                        Console.Write("*");
+                    }
+
+
+                    Console.WriteLine();
                 }
-
-
-                for (int k = 1; k <= 2 * i - 1; k++)
-                {
-                    Console.Write("*");
-                }
-
-
-                Console.WriteLine();
             }
+
         }
     }
 }
