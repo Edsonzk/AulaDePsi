@@ -1,4 +1,4 @@
-﻿using System;
+﻿ using System;
 
 namespace NPCPerks
 {
@@ -7,7 +7,7 @@ namespace NPCPerks
         static void Main(string[] args)
         {
 
-             int numNPCs;
+            /* int numNPCs;
 
             // Variáveis para guardar características de cada NPC
             Classes[] npcClasses;
@@ -91,7 +91,15 @@ namespace NPCPerks
 
                 // Mostrar característica de NPC atual no ecrã
                 Console.WriteLine($"\t Característica: {npcPerks[i]}");
+            Console.WriteLine();*/
+
+            string a;
+            Console.WriteLine("introduza uma string: ");
+            a = Console.ReadLine();
+
             Console.WriteLine();
+            Console.WriteLine("a string inserida foi:", a )
+
         }
     }
 }
