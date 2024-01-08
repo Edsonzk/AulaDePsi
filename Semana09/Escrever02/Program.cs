@@ -1,34 +1,39 @@
 ﻿using System;
+using System.IO;
 
 namespace Escrever02
 {
     class Program
     {
+        // Caminho universal para ficheiro no ambiente de trabalho
+        private static string caminho = Path.Combine(
+          Environment.GetFolderPath(Environment.SpecialFolder.Desktop),
+          "input.txt");
+
         static void Main(string[] args)
-        {
-            
-            /*Programa deve ler input do utilizador, uma string de cada vez
-            Guardar strings num array, à medida que são lidas
-            Quando o utilizador inserir uma string vazia:
-            O programa guarda as strings lidas para um ficheiro e termina*/
+        {              
+            // Variável para guardar input do utilizador
+            string input;
 
-            string[] strings = new string[100];
-            int i = 0;
-            while (true)
+            // Instância de StreamWriter para escrever no ficheiro
+            StreamWriter sw = new StreamWriter(caminho);
+          
+            Console.Write("Escreve várias linhas de texto para guardar num ficheiro");
+            Console.Write("\nPressiona a tecla ENTER quando quiseres terminar\n");
+
+            // Ciclo para ler input do utilizador e escrever no ficheiro
+            // enquanto não for inserida uma string vazia
+            do 
             {
-                Console.WriteLine("Insira uma string:");
-                string s = Console.ReadLine();
-                if (s == "")
-                {
-                    string[] stringsToWrite = new string[i];
-                    Array.Copy(strings, stringsToWrite, i);
-                    System.IO.File.WriteAllLines("strings.txt", stringsToWrite);
-                    break;
-                }
+                input = Console.ReadLine();
 
+                if (input != "")
+                  sw.WriteLine(input);
+            }
+            while(input != "");
 
-
+            // Fechar ficheiro
+            sw.Close();
         }
     }
-}
 }
